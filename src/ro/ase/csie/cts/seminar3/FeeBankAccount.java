@@ -1,6 +1,8 @@
 package ro.ase.csie.cts.seminar3;
 
-public class FeeBankAccount extends BankAccount {
+import ro.ase.csie.cts.seminar2.solid.BankAccount;
+
+public class FeeBankAccount extends DebitBankAccount {
     private long fee = 2;
 
     public FeeBankAccount(String iban, Person accountHolder) {
