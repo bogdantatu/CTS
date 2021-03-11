@@ -5,13 +5,14 @@ import ro.ase.csie.cts.seminar2.solid.BankAccount;
 public class FeeBankAccount extends DebitBankAccount {
     private long fee = 2;
 
-    public FeeBankAccount(String iban, Person accountHolder) {
-        super(iban, accountHolder);
+    public FeeBankAccount(NotificationService ns, String iban, Person accountHolder) {
+        super(ns, iban, accountHolder);
     }
 
     @Override
     public void withdraw(long amount) throws InsufficientFundsException {
-        System.out.println("Adding " + fee + " fee to withdrawal");
+
+        notificationService.notify(accountHolder, "Adding " + fee + " fee to withdrawal");
         super.withdraw(amount + fee);
     }
 }
