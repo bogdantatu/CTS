@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar2.solid;
+package CTS.seminar3;
 
 public class InsufficientFundsException extends Exception {
 

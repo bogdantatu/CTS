@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar2.solid;
+package CTS.seminar2.solid;
 
 public class BankAccount {
     private long balance;

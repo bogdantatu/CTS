@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar3;
+package CTS.seminar3;
 
 import java.util.HashMap;
 import java.util.Map;

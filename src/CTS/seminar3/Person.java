@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar2.solid;
+package CTS.seminar3;
 
 import java.util.Date;
 
@@ -7,6 +7,32 @@ public class Person {
     private String address;
     private Date birthDate;
     private long salary;
+    private String email;
+    private String mobile;
+    private NotificationType notificationType;
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public enum NotificationType{
+        EMAIL,
+        SMS
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
 
     public Person(String name) {
         this.name = name;

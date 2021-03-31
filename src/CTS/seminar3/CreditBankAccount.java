@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar3;
+package CTS.seminar3;
 
 public class CreditBankAccount extends BankAccount implements Receivable{
 

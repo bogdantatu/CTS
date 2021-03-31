@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar2.solid;
+package CTS.seminar2.solid;
 
 public class FeeBankAccount extends BankAccount {
     private long fee = 2;

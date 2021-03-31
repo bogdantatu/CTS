@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar3;
+package CTS.seminar3;
 
 public class DebitBankAccount extends BankAccount implements Payable, Receivable, Transferable {
     public DebitBankAccount(NotificationService ns, String iban, Person person) {

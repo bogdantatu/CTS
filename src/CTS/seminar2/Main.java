@@ -1,9 +1,9 @@
-package ro.ase.csie.cts.seminar2;
+package CTS.seminar2;
 
-import ro.ase.csie.cts.seminar2.solid.BankAccount;
-import ro.ase.csie.cts.seminar2.solid.FeeBankAccount;
-import ro.ase.csie.cts.seminar2.solid.InsufficientFundsException;
-import ro.ase.csie.cts.seminar2.solid.Person;
+import CTS.seminar2.solid.BankAccount;
+import CTS.seminar2.solid.FeeBankAccount;
+import CTS.seminar2.solid.InsufficientFundsException;
+import CTS.seminar2.solid.Person;
 
 public class Main {
     public static void main(String[] args) {

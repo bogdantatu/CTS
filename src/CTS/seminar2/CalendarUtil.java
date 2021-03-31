@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar2;
+package CTS.seminar2;
 
 import java.text.DateFormatSymbols;
 import java.util.Locale;
