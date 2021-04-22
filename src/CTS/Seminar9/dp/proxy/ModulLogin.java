@@ -12,10 +12,7 @@ public class ModulLogin implements InterfataModulLogin{
 
     @Override
     public boolean login(String username, String password) {
-        if(username.equals("admin") && password.equals("admin12"))
-            return true;
-        else
-            return false;
+      return username.equals("admin") && password.equals("admin12");
     }
 
     @Override

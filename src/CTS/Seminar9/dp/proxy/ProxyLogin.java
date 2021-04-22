@@ -11,7 +11,6 @@ public class ProxyLogin implements InterfataModulLogin{
     public Map<String, Integer> nrIncercari = new HashMap<>();
 
     public ProxyLogin(InterfataModulLogin modulLogin) {
-        super();
         this.modulLogin = modulLogin;
     }
 
@@ -24,16 +23,18 @@ public class ProxyLogin implements InterfataModulLogin{
         }
         if(modulLogin != null){
             if(nrIncercariNereusite < NR_MAX_INCERCARI) {
-                if (modulLogin.login(username, password) == true)
+                if (modulLogin.login(username, password)){
+                    nrIncercariNereusite = 0;
+                    nrIncercari.put(username, nrIncercariNereusite);
                     return true;
-                else {
-                    nrIncercariNereusite += 1;
-                    return false;
                 }
+                nrIncercariNereusite += 1;
+                nrIncercari.put(username, nrIncercariNereusite);
+                return false;
             }
-            else
                 return false;
         }
+        throw new UnsupportedOperationException();
     }
 
     @Override
